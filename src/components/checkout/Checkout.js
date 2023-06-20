@@ -1,10 +1,14 @@
 import React from 'react'
 import './Checkout.css'
+import Header from '../Home/Header/Header'
 
 
 function Checkout() {
   return (
-    <div>Checkout</div>
+    <div>
+      <Header/>
+      Checkout
+    </div>
   )
 }
 
