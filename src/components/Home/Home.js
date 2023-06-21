@@ -26,10 +26,10 @@ function Home() {
             />
             <Product
               id='1234'
-              title='def'
+              title='All-New Echo Dot (5th Gen, 2023 release) | Smart speaker with Bigger sound, Motion Detection'
               price={13.27}
               rating={4}
-              image={p1}
+              image='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6tXKw-jNbU-qccRh2J99gT9acbDr3KNrn8g&usqp=CAU'
             />
             </div>
             <div className='home_row'>
