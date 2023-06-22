@@ -5,9 +5,13 @@ import './Header.css'
 
 //icons
 import { Search,ShoppingBasket} from '@mui/icons-material'
+import { useStateValue } from '../../StateProvider/StateProvider'
 
 
 function Header() {
+
+  const [{basket}]=useStateValue();
+
   return (
    <nav className='header'>
     <Link to='/login'>
@@ -43,7 +47,9 @@ function Header() {
         <Link to='/checkout' className='header_link'>
             <div className='header_optionBasket'>
                 <ShoppingBasket/>
-                <span>0</span>
+                <span>
+                {basket.length}
+                </span>
             </div>
         </Link>
         
