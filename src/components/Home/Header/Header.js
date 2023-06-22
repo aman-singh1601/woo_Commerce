@@ -48,7 +48,7 @@ function Header() {
             <div className='header_optionBasket'>
                 <ShoppingBasket/>
                 <span>
-                {basket.length}
+                {basket?.length}
                 </span>
             </div>
         </Link>
