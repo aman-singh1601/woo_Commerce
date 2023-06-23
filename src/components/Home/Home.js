@@ -34,21 +34,21 @@ function Home() {
             </div>
             <div className='home_row'>
             <Product
-              id='123'
+              id='12323'
               title='abc'
               price={11.96}
               rating={5}
               image={p1}
             />
             <Product
-              id='1234'
+              id='12435434'
               title='def'
               price={13.27}
               rating={4}
               image={p1}
             />
             <Product
-              id='1234'
+              id='1245435434'
               title='def'
               price={13.27}
               rating={4}
@@ -57,7 +57,7 @@ function Home() {
             </div>
             <div className='home_row'>
             <Product
-              id='1234'
+              id='432432'
               title='def'
               price={13.27}
               rating={4}

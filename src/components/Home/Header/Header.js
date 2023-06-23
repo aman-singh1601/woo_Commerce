@@ -14,7 +14,7 @@ function Header() {
 
   return (
    <nav className='header'>
-    <Link to='/login'>
+    <Link to='/'>
         <img
         className='header_logo'
         src={logo_image}
