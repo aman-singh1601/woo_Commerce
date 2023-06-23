@@ -4,13 +4,13 @@ import './CheckoutProduct.css'
 function CheckoutProduct({title,id,price,image,rating}) {
 
     const RemoveFromBasket=()=>{
-        
+
     }
 
   return (
     <div className='checkoutProduct'>
         <img src={image} alt=''/>
-        <div className='chekoutProduct_info'>
+        <div className='checkoutProduct_info'>
             <p className='checkoutProduct_title'>{title}</p>
 
             <p className='checkoutProduct_price'>
@@ -26,7 +26,9 @@ function CheckoutProduct({title,id,price,image,rating}) {
                 )
             }
          </div>
-        <button onClick={RemoveFromBasket} >REMOVE FROM BASKET</button>
+        <button 
+        onClick={RemoveFromBasket} 
+        >REMOVE FROM BASKET</button>
         </div>
     </div>
   )
