@@ -6,12 +6,15 @@ import './Header.css'
 //icons
 import { Search,ShoppingBasket} from '@mui/icons-material'
 import { useStateValue } from '../../StateProvider/StateProvider'
+import { auth } from '../../../firebase'
 
 
 function Header() {
 
-  const [{basket}]=useStateValue();
-
+  const [{basket,user}]=useStateValue();
+  const login=()=>{
+    auth.signOut();
+  }
   return (
    <nav className='header'>
     <Link to='/'>
@@ -26,10 +29,12 @@ function Header() {
     <Search className='header_searchIcon'/>    
     </div> 
     <div className='header_nav'>
-        <Link to='/login' className='header_link'>
-          <div className='header_option'>
+        <Link to={!user && '/login'} className='header_link'>
+          <div onClick={login} className='header_option'>
            <span className='header_optionLine1'>Hello</span> 
-           <span className='header_optionLine2'>Sign In</span> 
+           <span className='header_optionLine2'>
+           {user? 'Sign Out' : 'Sign In'}
+            </span> 
           </div>   
         </Link>
         <Link to='/' className='header_link'>
