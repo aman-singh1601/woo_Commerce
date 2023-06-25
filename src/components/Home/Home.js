@@ -34,6 +34,7 @@ function Home() {
             </div>
             <div className='home_row'>
             <Product
+             
               id='12323'
               title='abc'
               price={11.96}
@@ -41,6 +42,7 @@ function Home() {
               image={p1}
             />
             <Product
+          
               id='12435434'
               title='def'
               price={13.27}
@@ -48,6 +50,7 @@ function Home() {
               image={p1}
             />
             <Product
+           
               id='1245435434'
               title='def'
               price={13.27}

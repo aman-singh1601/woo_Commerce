@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 300px;
+    width: 280px;
     height: 100px;
     padding: 20px;
     background-color: rgb(226, 226, 226);
@@ -15,12 +15,21 @@
     align-items: center;
 }
 .subtotal>button{
-    cursor: pointer;
-    background-color: #0b2d5a;
-    border-radius: 2px;
-    width: 100%;
-    height: 30px;
-    border: 1 px solid;
+    min-height: 30px;
+    border-radius: 0.3rem;
+    background: #0b2d5a;
+    border: 1px solid;
     margin-top: 10px;
+    border-color: none;
     color: white;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 250ms;
+}
+.subtotal>button:hover{
+    transform: scale(1.03);
+    background-color: white;
+    font-weight: 600;
+    border: 2px solid #0b2d5a;
+    color: #0b2d5a;
 }
