@@ -4,12 +4,12 @@ import 'firebase/compat/auth';
 import 'firebase/compat/firestore'
 
 const firebaseApp = firebase.initializeApp ({
-  apiKey: "AIzaSyBI9jl-zrXT-yej3b1cM-RoT-tzESggnqs",
-  authDomain: "woo-commerce-bd194.firebaseapp.com",
-  projectId: "woo-commerce-bd194",
-  storageBucket: "woo-commerce-bd194.appspot.com",
-  messagingSenderId: "220304581261",
-  appId: "1:220304581261:web:8d66c136a20620269bf8c4"
+  apiKey: "AIzaSyBpkK0wfKLQ03LOgEfp0c49tQ-HsdLSRQo",
+  authDomain: "woo-commerce-941c8.firebaseapp.com",
+  projectId: "woo-commerce-941c8",
+  storageBucket: "woo-commerce-941c8.appspot.com",
+  messagingSenderId: "152483209772",
+  appId: "1:152483209772:web:5a38a2a870eba82958a789"
 });
 
 
