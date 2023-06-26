@@ -7,9 +7,12 @@ import SubTotal from './SubTotal/SubTotal'
 import FlipMove from 'react-flip-move'
 
 
+
 function Checkout() {
     const ref=useRef();
     const [{basket},dispatch]=useStateValue()
+
+    
 
   return (
     <div>
