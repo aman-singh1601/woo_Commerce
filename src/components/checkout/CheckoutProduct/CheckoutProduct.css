@@ -1,10 +1,10 @@
 .checkoutProduct{
     border: 1px solid rgb(234, 234, 234);
     display: flex;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: 2px;
+    margin-top: 2px;
     background-color: rgb(226, 226, 226);
-    border: 2px solid  rgb(255, 245, 245);
+    
     
 }
 
@@ -22,7 +22,7 @@
 }
 .checkout_button{
     position: absolute;
-    bottom: 2px;
+    bottom: 4px;
     min-height: 30px;
     border-radius: 0.3rem;
     background: #0b2d5a;
