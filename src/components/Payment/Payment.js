@@ -48,7 +48,7 @@ function Payment() {
             //paymentIntent=payment COnfirmation
             setSucceeded(true);
             setError(null)
-            setProcessing(true)
+            setProcessing(false)
 
             nagivate('/orders',{replace:true})
         })
