@@ -1,24 +1,57 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Header from '../Home/Header/Header'
 import './Payment.css'
 import { useStateValue } from '../StateProvider/StateProvider'
 import CheckoutProduct from '../checkout/CheckoutProduct/CheckoutProduct'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { CardElement,useElements, useStripe } from '@stripe/react-stripe-js'
 
 
 import CurrencyFormat from 'react-currency-format'
 import { subBasketTotal } from '../../reducer' 
+import axios from '../../axios'
 
 function Payment() {
+
+    const nagivate=useNavigate()
+
     const[{basket,user}]=useStateValue()
     const stripe =useStripe()
-    const element=useElements()
-    const [Error,setError]=useState(null)
+    const elements=useElements()
+    const [error,setError]=useState(null)
+    const [processing,setProcessing]=useState('')
+    const [succeeded,setSucceeded]=useState(false)
     const [disabled,setDisabled]=useState(true)
+    const [clientSecret,setClientSecret]=useState(true)
 
-    const handleSubmit=e=>{
-        
+    useEffect(()=>{
+        const getClientSecret=async()=>{
+            const response =await axios ({
+                method:'post', 
+                url:`/payments/create?total=${subBasketTotal(basket) * 100 }`
+            })
+
+            setClientSecret(response.data.clientSecret)
+        }
+    },[basket])
+
+    const handleSubmit=async(event)=>{
+        event.preventDefault()
+        setProcessing(true)
+
+
+        const  payload=await stripe.confirmCardPayment(clientSecret, {
+            payment_method:{
+                card:elements.getElement(CardElement)
+            }
+        }).then(({paymentIntent})=>{
+            //paymentIntent=payment COnfirmation
+            setSucceeded(true);
+            setError(null)
+            setProcessing(true)
+
+            nagivate('/orders',{replace:true})
+        })
     }
     const handleChange=e=>{
         setDisabled(e.empty)
@@ -86,8 +119,14 @@ function Payment() {
                                     thousandSeparator={true}
                                     prefix={'$'}
                                     />
+                            <button disabled={
+                                processing||disabled||succeeded
+                            }>
+                                <span>{processing ? <p>Processing</p>:'Buy Now'}</span>
+                            </button>
 
                             </div>
+                            {error && <div>{error}</div>}
                         </form>
                     </div>
                 </div>
