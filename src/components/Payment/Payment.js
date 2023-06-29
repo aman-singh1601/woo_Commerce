@@ -33,7 +33,10 @@ function Payment() {
 
             setClientSecret(response.data.clientSecret)
         }
+        getClientSecret()
     },[basket])
+    console.log('the secret is :: ',clientSecret);
+
 
     const handleSubmit=async(event)=>{
         event.preventDefault()

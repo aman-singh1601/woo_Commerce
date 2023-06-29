@@ -36,7 +36,6 @@ function App() {
       unsubcribe();
     }
   },[])
-  console.log('user is  >>>',user)
   return (
     <Router>
     <div className="app">

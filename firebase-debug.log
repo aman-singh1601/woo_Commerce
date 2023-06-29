@@ -111,3 +111,166 @@
 
 Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
  
+[debug] [2023-06-29T07:34:18.973Z] [work-queue] {"queuedWork":["/woo-commerce-941c8/us-central1/api-2023-06-29T07:34:18.972Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-29T07:34:18.973Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/woo-commerce-941c8/us-central1/api-2023-06-29T07:34:18.972Z"],"workRunningCount":1}
+[debug] [2023-06-29T07:34:18.973Z] Accepted request GET /woo-commerce-941c8/us-central1/api --> us-central1-api
+[debug] [2023-06-29T07:34:18.977Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-29T07:34:18.978Z] [functions] Got req.url=/woo-commerce-941c8/us-central1/api, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/woo-commerce-941c8/us-central1/api, mapping to path=/"}}
+[debug] [2023-06-29T07:34:19.004Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2023-06-29T07:34:19.006Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2023-06-29T07:34:20.449Z] [runtime-status] [20076] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.9.0","resolution":"C:\\Users\\aman1\\OneDrive\\Desktop\\React\\React Project\\woo-commerce-v2\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20076] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.9.0\",\"resolution\":\"C:\\\\Users\\\\aman1\\\\OneDrive\\\\Desktop\\\\React\\\\React Project\\\\woo-commerce-v2\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2023-06-29T07:34:20.449Z] [runtime-status] [20076] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"C:\\Users\\aman1\\OneDrive\\Desktop\\React\\React Project\\woo-commerce-v2\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20076] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"C:\\\\Users\\\\aman1\\\\OneDrive\\\\Desktop\\\\React\\\\React Project\\\\woo-commerce-v2\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-06-29T07:34:20.450Z] [runtime-status] [20076] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20076] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-06-29T07:34:20.451Z] [runtime-status] [20076] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"C:\\Users\\aman1\\OneDrive\\Desktop\\React\\React Project\\woo-commerce-v2\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20076] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"C:\\\\Users\\\\aman1\\\\OneDrive\\\\Desktop\\\\React\\\\React Project\\\\woo-commerce-v2\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-06-29T07:34:20.762Z] [runtime-status] [20076] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20076] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-06-29T07:34:20.762Z] [runtime-status] [20076] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.4.1","resolution":"C:\\Users\\aman1\\OneDrive\\Desktop\\React\\React Project\\woo-commerce-v2\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20076] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"C:\\\\Users\\\\aman1\\\\OneDrive\\\\Desktop\\\\React\\\\React Project\\\\woo-commerce-v2\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}}"}}
+[debug] [2023-06-29T07:34:20.763Z] [runtime-status] [20076] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"C:\\Users\\aman1\\OneDrive\\Desktop\\React\\React Project\\woo-commerce-v2\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20076] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"C:\\\\Users\\\\aman1\\\\OneDrive\\\\Desktop\\\\React\\\\React Project\\\\woo-commerce-v2\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-06-29T07:34:20.765Z] [runtime-status] [20076] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.9.0","resolution":"C:\\Users\\aman1\\OneDrive\\Desktop\\React\\React Project\\woo-commerce-v2\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20076] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.9.0\",\"resolution\":\"C:\\\\Users\\\\aman1\\\\OneDrive\\\\Desktop\\\\React\\\\React Project\\\\woo-commerce-v2\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2023-06-29T07:34:20.770Z] [runtime-status] [20076] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.1","resolution":"C:\\Users\\aman1\\OneDrive\\Desktop\\React\\React Project\\woo-commerce-v2\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20076] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.1\",\"resolution\":\"C:\\\\Users\\\\aman1\\\\OneDrive\\\\Desktop\\\\React\\\\React Project\\\\woo-commerce-v2\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-06-29T07:34:20.770Z] [runtime-status] [20076] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.9.0","resolution":"C:\\Users\\aman1\\OneDrive\\Desktop\\React\\React Project\\woo-commerce-v2\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20076] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.9.0\",\"resolution\":\"C:\\\\Users\\\\aman1\\\\OneDrive\\\\Desktop\\\\React\\\\React Project\\\\woo-commerce-v2\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2023-06-29T07:34:20.995Z] [runtime-status] [20076] Functions runtime initialized. {"cwd":"C:\\Users\\aman1\\OneDrive\\Desktop\\React\\React Project\\woo-commerce-v2\\functions","node_version":"16.15.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20076] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\aman1\\\\OneDrive\\\\Desktop\\\\React\\\\React Project\\\\woo-commerce-v2\\\\functions\",\"node_version\":\"16.15.0\"}"}}
+[debug] [2023-06-29T07:34:20.997Z] [runtime-status] [20076] Listening to port: \\?\pipe\fire_emu_1848cf33a5271445 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20076] Listening to port: \\\\?\\pipe\\fire_emu_1848cf33a5271445"}}
+[debug] [2023-06-29T07:34:21.091Z] [worker-us-central1-api-2a58bfbf-c794-4412-8d68-b4fa64928cbd]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-2a58bfbf-c794-4412-8d68-b4fa64928cbd]: IDLE"}}
+[debug] [2023-06-29T07:34:21.092Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2023-06-29T07:34:21.093Z] [worker-us-central1-api-2a58bfbf-c794-4412-8d68-b4fa64928cbd]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-2a58bfbf-c794-4412-8d68-b4fa64928cbd]: BUSY"}}
+[debug] [2023-06-29T07:34:21.100Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 8.0487ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 8.0487ms"}}
+[debug] [2023-06-29T07:34:21.103Z] [worker-us-central1-api-2a58bfbf-c794-4412-8d68-b4fa64928cbd]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-2a58bfbf-c794-4412-8d68-b4fa64928cbd]: IDLE"}}
+[debug] [2023-06-29T07:34:21.103Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-29T07:34:21.103Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-29T07:34:21.104Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-29T07:34:21.138Z] Functions emulator received unknown request at path /favicon.ico
+[debug] [2023-06-29T07:34:46.422Z] File C:\Users\aman1\OneDrive\Desktop\React\React Project\woo-commerce-v2\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\aman1\\OneDrive\\Desktop\\React\\React Project\\woo-commerce-v2\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-06-29T07:34:47.430Z] Validating nodejs source
+[debug] [2023-06-29T07:34:48.772Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "firebase-tools": "^12.4.0",
+    "stripe": "^12.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-06-29T07:34:48.772Z] Building nodejs source
+[debug] [2023-06-29T07:34:48.772Z] Failed to find version of module node: reached end of search path C:\Users\aman1\OneDrive\Desktop\React\React Project\woo-commerce-v2\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "16". Using node@16 from host. 
+[debug] [2023-06-29T07:34:48.774Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-06-29T07:34:48.779Z] Found firebase-functions binary at 'C:\Users\aman1\OneDrive\Desktop\React\React Project\woo-commerce-v2\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-06-29T07:34:49.023Z] Serving at port 8374
+
+[debug] [2023-06-29T07:34:49.424Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-06-29T07:34:49.428Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-06-29T07:34:49.438Z] [worker-pool] Shutting down IDLE worker (us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-api)"}}
+[debug] [2023-06-29T07:34:49.439Z] [worker-us-central1-api-2a58bfbf-c794-4412-8d68-b4fa64928cbd]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-2a58bfbf-c794-4412-8d68-b4fa64928cbd]: FINISHING"}}
+[debug] [2023-06-29T07:34:49.447Z] [worker-us-central1-api-2a58bfbf-c794-4412-8d68-b4fa64928cbd]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-2a58bfbf-c794-4412-8d68-b4fa64928cbd]: exited"}}
+[debug] [2023-06-29T07:34:49.447Z] [worker-us-central1-api-2a58bfbf-c794-4412-8d68-b4fa64928cbd]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-2a58bfbf-c794-4412-8d68-b4fa64928cbd]: FINISHED"}}
+[debug] [2023-06-29T07:41:09.750Z] File C:\Users\aman1\OneDrive\Desktop\React\React Project\woo-commerce-v2\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\aman1\\OneDrive\\Desktop\\React\\React Project\\woo-commerce-v2\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-06-29T07:41:10.767Z] Validating nodejs source
+[debug] [2023-06-29T07:41:12.275Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "firebase-tools": "^12.4.0",
+    "stripe": "^12.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-06-29T07:41:12.276Z] Building nodejs source
+[debug] [2023-06-29T07:41:12.276Z] Failed to find version of module node: reached end of search path C:\Users\aman1\OneDrive\Desktop\React\React Project\woo-commerce-v2\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "16". Using node@16 from host. 
+[debug] [2023-06-29T07:41:12.278Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-06-29T07:41:12.284Z] Found firebase-functions binary at 'C:\Users\aman1\OneDrive\Desktop\React\React Project\woo-commerce-v2\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-06-29T07:41:12.554Z] Serving at port 8126
+
+[debug] [2023-06-29T07:41:13.083Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-06-29T07:41:13.087Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-06-29T07:45:39.344Z] File C:\Users\aman1\OneDrive\Desktop\React\React Project\woo-commerce-v2\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\aman1\\OneDrive\\Desktop\\React\\React Project\\woo-commerce-v2\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-06-29T07:45:40.355Z] Validating nodejs source
+[debug] [2023-06-29T07:45:41.876Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "firebase-tools": "^12.4.0",
+    "stripe": "^12.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-06-29T07:45:41.876Z] Building nodejs source
+[debug] [2023-06-29T07:45:41.876Z] Failed to find version of module node: reached end of search path C:\Users\aman1\OneDrive\Desktop\React\React Project\woo-commerce-v2\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "16". Using node@16 from host. 
+[debug] [2023-06-29T07:45:41.878Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-06-29T07:45:41.883Z] Found firebase-functions binary at 'C:\Users\aman1\OneDrive\Desktop\React\React Project\woo-commerce-v2\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-06-29T07:45:42.204Z] Serving at port 8410
+
+[debug] [2023-06-29T07:45:42.677Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-06-29T07:45:42.681Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
