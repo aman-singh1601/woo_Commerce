@@ -3,7 +3,7 @@ import './CheckoutProduct.css'
 import { useStateValue } from '../../StateProvider/StateProvider'
 
 const CheckoutProduct=React.forwardRef((props,ref)=> {
-    const {title,id,price,image,rating}=props
+    const {title,id,price,image,rating,hideButton}=props
     const [{basket},dispatch]=useStateValue()
     const RemoveFromBasket=()=>{
         dispatch({
@@ -33,11 +33,16 @@ const CheckoutProduct=React.forwardRef((props,ref)=> {
                 )
             }
          </div>
-        <button 
+        {
+            !hideButton&&(
+                <button 
         className='checkout_button'
         onClick={RemoveFromBasket} 
         >REMOVE FROM BASKET</button>
-        </div>
+       
+            )
+        }
+         </div>
     </div>
   )
 }

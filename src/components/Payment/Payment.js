@@ -10,6 +10,7 @@ import { CardElement,useElements, useStripe } from '@stripe/react-stripe-js'
 import CurrencyFormat from 'react-currency-format'
 import { subBasketTotal } from '../../reducer' 
 import axios from '../../axios'
+import { db } from '../../firebase'
 
 function Payment() {
 
@@ -49,7 +50,17 @@ function Payment() {
             }
         }).then(({paymentIntent})=>{
             //paymentIntent=payment COnfirmation
-            setSucceeded(true);
+            db.collection('users')
+            .doc(user?.uid)
+            .collection('orders')
+            .doc(paymentIntent.id)
+            .set({
+                basket:basket,
+                amount:paymentIntent.amount,
+                created: paymentIntent.created 
+            })
+
+            setSucceeded(true); 
             setError(null)
             setProcessing(false)
 
@@ -126,7 +137,7 @@ function Payment() {
                                     thousandSeparator={true}
                                     prefix={'$'}
                                     />
-                            <button disabled={
+                            <button className='payment_button' disabled={
                                 processing||disabled||succeeded
                             }>
                                 <span>{processing ? <p>Processing</p>:'Buy Now'}</span>

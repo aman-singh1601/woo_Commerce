@@ -23,3 +23,32 @@
 .payment_address ,.payment_items,.payment_details{
     flex: 0.8;
 }
+.payment_details>form{
+    max-width: 400px;
+
+}
+.payment_details>h3{
+    padding-bottom:20px;
+
+}
+.payment_button{
+    width: 100%;
+    min-height: 30px;
+    font-weight: bolder;
+    border-radius: 2px;
+    background: #0b2d5a;
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: none;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 250ms;
+}
+.payment_button:hover{
+    transform: scale(1.03);
+    background-color: white;
+    font-weight: 600;
+    border: 2px solid #0b2d5a;
+    color: #0b2d5a;
+}
