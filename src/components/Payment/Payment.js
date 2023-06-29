@@ -15,7 +15,7 @@ function Payment() {
 
     const nagivate=useNavigate()
 
-    const[{basket,user}]=useStateValue()
+    const[{basket,user},dispatch]=useStateValue()
     const stripe =useStripe()
     const elements=useElements()
     const [error,setError]=useState(null)
@@ -52,6 +52,10 @@ function Payment() {
             setSucceeded(true);
             setError(null)
             setProcessing(false)
+
+            dispatch({
+                type:"EMPTY_BASKET",
+            })
 
             nagivate('/orders',{replace:true})
         })
