@@ -134,7 +134,7 @@ function Payment() {
                                     value={subBasketTotal(basket)}
                                     displayType={'text'}
                                     thousandSeparator={true}
-                                    prefix={'$'}
+                                    prefix={'Rs '}
                                     />
                             <button className='payment_button' disabled={
                                 processing||disabled||succeeded
